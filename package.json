@@ -10,7 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "discord-anti-spam": "^2.7.3"
-  },
+  
   "devDependencies": {},
   "description": ""
+ 
+  "engines": {
+   "node": "16.x",
+   "npm": "7.x"
+    }
 }
