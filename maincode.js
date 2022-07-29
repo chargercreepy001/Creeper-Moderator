@@ -9,8 +9,8 @@ console.log("Bot started.");
 
  //describe the Dicord API
 const Discord = require("discord.js");
-const client = new Discord.Client({ intents: "GUILDS", "GUILD_MESSAGES", "GUILD_PRESENCES"] });
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, GatewayIntentBits } = require('discord.js');
+const client = new Discord.Client({  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildBans] });
 const AntiSpam = require("discord-anti-spam");
 
 
