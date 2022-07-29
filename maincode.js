@@ -13,35 +13,13 @@ const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD
 const { MessageEmbed } = require('discord.js');
 const AntiSpam = require("discord-anti-spam");
 
-const antiSpam = new AntiSpam({
-  warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
-  muteThreshold: 4, // Amount of messages sent in a row that will cause a mute
-   // Amount of messages sent in a row that will cause a ban.
-  maxInterval: 3000, // Amount of time (in milliseconds) in which messages are considered spam.
-  warnMessage: "{@user}, Please stop spamming or it will lead lead to mutes.", // Message that will be sent in chat upon warning a user.
-  muteMessage: "**{user_tag}** has been muted for spamming.", // Message that will be sent in chat upon muting a user.
-  
-  maxDuplicatesWarning: 6, // Amount of duplicate messages that trigger a warning.
 
-  maxDuplicatesMute: 8, // Ammount of duplicate message that trigger a mute.
-  ignoredPermissions: ["MANAGE_ROLES"], // Bypass users with any of these permissions.
-  ignoreBots: true, // Ignore bot messages.
-  verbose: true, // Extended Logs from module.
-  ignoredMembers: [], // Array of User IDs that get ignored.
-  unMuteTime: 1, // Amount of time (in minutes) a user will be muted for.
-  removeMessages: true, // If the bot should remove all the spam messages when taking action on a user!
-  modLogsEnabled: false, // If to enable modlogs
-  modLogsChannelName: "vulcan-assistant-logs", // channel to send the modlogs too!
-  modLogsMode: "embed",
-  // And many more options... See the documentation.
-});
 
 //Bot prefix
  var prefix = "Vu!";
 
 //Here the client runs
 
-client.on("messageCreate", (message) => antiSpam.message(message));
 client.on("message", message => {
 
   const Cmd = message.content;
