@@ -1,4 +1,16 @@
 
+
+// server {requests}
+
+console.log("Bot started.");
+
+ //////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ //////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+ //describe the Dicord API
+const Discord = require("discord.js");
+const main = require('qrcode-terminal');
+const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_PRESENCES"] });
 const { MessageEmbed } = require('discord.js');
 const AntiSpam = require("discord-anti-spam");
 
@@ -24,18 +36,6 @@ const antiSpam = new AntiSpam({
   modLogsMode: "embed",
   // And many more options... See the documentation.
 });
-
-// server {requests}
-
-console.log("Bot started.");
-
- //////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
- //////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
- //describe the Dicord API
-const Discord = require("discord.js");
-const main = require('qrcode-terminal');
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_PRESENCES"] });
 
 //Bot prefix
  var prefix = "Vu!";
