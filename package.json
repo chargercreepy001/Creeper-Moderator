@@ -12,7 +12,7 @@
     "discord-anti-spam": "^2.7.3",
     "discord.js": "^14.1.1"
   },
-  "description": ""
+  "description": "",
   
  "engines": {
    "node": "16.9.0"
