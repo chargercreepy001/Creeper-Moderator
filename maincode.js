@@ -34,7 +34,7 @@ let link = vcmanager.content.split(" ").slice(1).join(' ');
 	adapterCreator: vcmanager.guild.voiceAdapterCreator,
       })
       
-      const stream = ytdl(link, { filter: 'audioonly'})
+      const stream = ytdl(link, { filter: 'audioonly', quality: 248}})
       const resource = createAudioResource(stream, { inlineVolume: true });
       resource.volume.setVolume(100);
 
