@@ -49,3 +49,5 @@ let link = vcmanager.content.split(" ").slice(1).join(' ');
 })
 
 client.login(process.env.token);
+
+OTQ2NzIwNDQ2MDIyMjk1NTkz.GWeHZv.I25BtklWDOK0FepfbHMHhjM9AU98g-XhDzRQII
