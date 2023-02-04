@@ -32,7 +32,7 @@ let link = vcmanager.content.split(" ").slice(1).join(' ');
       channelId: channelid.id,
 	guildId: vcmanager.guildId,
 	adapterCreator: vcmanager.guild.voiceAdapterCreator,
-      })
+      })OTQ2NzIwNDQ2MDIyMjk1NTkz.G6on-3.oiQ7gMIDHLwnGxFDQWNMJRJR1wijVugHXPhEnM
       
       const stream = ytdl(link, { filter: 'audioonly', quality: 248});
       const resource = createAudioResource(stream, { inlineVolume: true });
